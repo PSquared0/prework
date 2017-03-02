@@ -1,0 +1,16 @@
+string = '0h2abe1zy'
+
+def parse(string, num, pos):
+return string[pos+num+1]
+
+result = ''
+
+numSet = [str(i) for i in range(0,10)]
+
+for i in range(0, len(string)):
+
+num = string[i]
+if num in numSet:
+result = result + parse(string,int(num),i)
+
+print resul
